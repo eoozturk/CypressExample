@@ -1,5 +1,3 @@
-
-
 describe('QA Automation', function(){
     it('Login Test', function(){
         
