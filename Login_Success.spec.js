@@ -3,17 +3,17 @@
 describe('QA Automation', function(){
     it('Login Test', function(){
         
-        cy.visit('https://staging1.alo-tech.com/v2/tr/login2.html#/')
+        cy.visit('Your Test URL')
 
         /*URL doğrulama*/
-        cy.url().should('include','/v2/tr/login2.html#/')
+        cy.url().should('include','URL Control')
 
        /*Web Element id access with get('#...') */
        cy.get('#email')
-            .type('emre.ozturk@alo-tech.com').should('have.value','emre.ozturk@alo-tech.com')
+            .type('Your Mail').should('Mail Control')
         
        cy.get('#password')
-            .type('123456').should('have.value','123456')
+            .type('Your Password').should('have.value','Password Control')
         
        /*Girilen text'i içeren web element e erişim sağlama*/    
        /*cy.contains('Giriş Yap').click()*/
